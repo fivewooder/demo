@@ -23,18 +23,29 @@
             background: deepskyblue;
             border-radius: 4px;
         }
+
+
+        .box{
+                 width:500px,
+                 margin: 0 auto;
+        }
+
     </style>
     <meta name="description" content="Bootstrap Stacked or vertical Tab Based Navigation Example">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
 
-<p>论文管理系统</p>
-<ul class="nav nav-tabs">
-  <li class="active"><a href="#">Home</a></li>
-  <li><a href="${path }/paper/allPaper">去管理</a></li>
-  <li><a href="#">联系我</a></li>
-</ul>
+<div class="page-header">
+    <h1>论文管理系统
+        <small>杨林彬（杉水）</small>
+    </h1>
+</div>
 
+<div class="container">
+<div class="box">
+<a class='btn btn-success' href="${path }/paper/allPaper">去管理</a>
+</div>
+</div>
 </body>
 </html>

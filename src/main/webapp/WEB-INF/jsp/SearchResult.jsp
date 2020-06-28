@@ -17,24 +17,10 @@
 </head>
 <body>
 <div class="container">
-    <div class="row clearfix">
-        <div class="col-md-12 column">
-            <div class="page-header">
-                <h1>
-                    基于SSM框架的管理系统：简单实现增、删、改、查。
-                </h1>
-            </div>
-        </div>
-    </div>
-
-    <div class="row clearfix">
-        <div class="col-md-12 column">
-            <div class="page-header">
-                <h1>
-                    <small>论文列表 —— 显示索引结果</small>
-                </h1>
-            </div>
-        </div>
+    <div class="page-header">
+        <h1>论文管理系统
+            <small>杨林彬（杉水）</small>
+        </h1>
     </div>
     <div class="row clearfix">
         <div class="col-md-12 column">

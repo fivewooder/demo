@@ -74,6 +74,11 @@
     <script type="text/javascript">
             function SearchPaper() {
                 var form = document.forms[0];
+                if (form.elements[0].value == ""){
+                    alert("搜索框内容不能为空！");
+                    form.elements[0].focus();
+                    return false;
+                }
                 form.action = "<%=basePath %>paper/SearchResult";
                 form.method = "post";
                 form.submit();

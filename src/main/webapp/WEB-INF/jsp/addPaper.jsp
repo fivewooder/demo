@@ -1,10 +1,3 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: lenovo
-  Date: 2018/4/7
-  Time: 16:45
-  To change this template use File | Settings | File Templates.
---%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%
@@ -15,6 +8,7 @@
 %>
 <html>
 <head>
+    <link rel="icon" href="../icon/favicon.ico">
     <title>新增论文</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- 引入 Bootstrap -->

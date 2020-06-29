@@ -10,6 +10,7 @@
 <% String appPath = request.getContextPath(); %>
 <html>
 <head>
+<link rel="icon" href="../icon/favicon.ico">
     <title>Paper索引结果</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- 引入 Bootstrap -->

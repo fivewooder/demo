@@ -32,10 +32,10 @@
         WHERE paper_id = #{paperId}
     </select>
 
-    <select id="queryByName" resultType="com.alibaba.pojo.Paper" parameterType="String">
+    <select id="queryByName" resultType="com.alibaba.pojo.Paper">
         SELECT paper_id as paperId, user_id as userId, name as paperName, number as paperNum, detail as paperDetail
         FROM paper
-        WHERE name = #{paperName}
+        WHERE name = #{param1} and user_id = #{param2}
     </select>
 
     <select id="queryAllPaper" resultMap="paperResultMap">

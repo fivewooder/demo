@@ -30,8 +30,8 @@ public class PaperController {
     }
 
     @RequestMapping("/SearchResult")
-    public String toShow(Model model, String name){
-        model.addAttribute("selectedPaper", paperService.queryByName(name));
+    public String toShow(Model model, String name, long userId){
+        model.addAttribute("selectedPaper", paperService.queryByName(name, userId));
         return "SearchResult"; //这里对应的是JSP页面，接受了MODEL传递来的参数
     }
 

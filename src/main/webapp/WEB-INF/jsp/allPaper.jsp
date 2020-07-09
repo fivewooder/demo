@@ -31,6 +31,7 @@
     <form class="navbar-form navbar-left" role="search">
     	<div class="form-group">
     	     <input type="text" class="form-control" placeholder="Search" name="name">
+            <input type="hidden" class="form-control" placeholder="Search" name="userId" value="${user.userId}">
     	     <button type="submit" class="btn btn-default" onclick="SearchPaper()">搜索</button>
         </div>
     </form>

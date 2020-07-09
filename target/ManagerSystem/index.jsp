@@ -44,7 +44,7 @@
           <ul class="nav nav-pills pull-right">
             <li role="presentation"><a href="index.jsp">Home</a></li>
             <li role="presentation"><a href="${path }/paper/toAddUser">Register</a></li>
-            <li role="presentation"><a href="#">Contact</a></li>
+            <li role="presentation"><a href="me.jsp">About Me</a></li>
           </ul>
         </nav>
         <h3 class="text-muted">杉水的论文管理系统</h3>

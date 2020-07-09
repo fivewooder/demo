@@ -31,10 +31,26 @@
         </h1>
     </div>
 
-    <form action="" name="userForm">
-        用户名：<input type="text" name="sysName"><br><br><br>
-        密&nbsp&nbsp码：<input type="password" name="passWord"><br><br><br>
-        <input type="button" value="登录" onclick="login()">
+    <form class="form-horizontal" role="form">
+        <div class="form-group">
+            <label for="firstname" class="col-sm-2 control-label">用户名</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="firstname"
+                       placeholder="请输入用户名" name="sysName">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="lastname" class="col-sm-2 control-label">密码</label>
+            <div class="col-sm-10">
+                <input type="password" class="form-control" id="lastname"
+                       placeholder="请输入密码" name="passWord">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <button type="submit" class="btn btn-default" onclick="login()">登录</button>
+            </div>
+        </div>
     </form>
 
     <script type="text/javascript">

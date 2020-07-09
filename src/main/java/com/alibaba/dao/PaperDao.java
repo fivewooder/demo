@@ -9,7 +9,7 @@ public interface PaperDao {
     int deletePaperById(long id);
     int updatePaper(Paper paper);
     Paper queryById(long id);
-    Paper queryByName(String name);
+    Paper queryByName(String name, long id);
     List<Paper> queryAllPaper();
     List<Paper> queryAllPaperByuserID(long uid);
 }

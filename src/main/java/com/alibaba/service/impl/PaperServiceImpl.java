@@ -15,8 +15,8 @@ public class PaperServiceImpl implements PaperService {
     private PaperDao paperDao;
 
     @Override
-    public Paper queryByName(String name) {
-        return paperDao.queryByName(name);
+    public Paper queryByName(String name, long id) {
+        return paperDao.queryByName(name, id);
     }
 
     @Override

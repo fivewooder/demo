@@ -2,6 +2,7 @@ package com.alibaba.pojo;
 
 public class Paper {
     public long paperId;
+    public long userId;
     public String paperName;
     public int paperNum;
     public String paperDetail;
@@ -12,6 +13,14 @@ public class Paper {
 
     public void setPaperId(long paperId) {
         this.paperId = paperId;
+    }
+
+    public long getUserId() {
+        return userId;
+    }
+
+    public void setUserId(long userId) {
+        this.userId = userId;
     }
 
     public String getPaperName() {

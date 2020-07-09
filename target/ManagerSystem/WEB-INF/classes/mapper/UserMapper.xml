@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.alibaba.dao.UserDao">
+
+    <insert id="addUser" parameterType="com.alibaba.pojo.User">
+        INSERT INTO user(name,sys_name,password) VALUE (#{userName}, #{sysName}, #{passWord})
+    </insert>
+
+    <update id="updateUser" parameterType="com.alibaba.pojo.User">
+        UPDATE user
+        SET NAME = #{userName},SYS_NAME = #{sysName},PASSWORD = #{passWord}
+        WHERE  USER_ID = #{userId}
+    </update>
+
+    <select id="queryUser" resultType="com.alibaba.pojo.User" parameterType="long">
+        SELECT user_id as userId, name as userName, sys_name as sysName,password as passWord
+        FROM user
+        WHERE user_id=#{userId}
+    </select>
+
+    <select id="queryByName" resultType="com.alibaba.pojo.User" parameterType="String">
+        SELECT user_id as userId, name as userName, sys_name as sysName,password as passWord
+        FROM user
+        WHERE sys_name = #{sysName}
+    </select>
+
+</mapper>

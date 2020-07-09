@@ -9,5 +9,7 @@ public interface PaperService {
     int deletePaperById(long id);
     int updatePaper(Paper paper);
     Paper queryById(long id);
+    Paper queryByName(String name);
+    List<Paper> queryAllPaperByuserID(long uid);
     List<Paper> queryAllPaper();
 }

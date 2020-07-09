@@ -15,6 +15,16 @@ public class PaperServiceImpl implements PaperService {
     private PaperDao paperDao;
 
     @Override
+    public Paper queryByName(String name) {
+        return paperDao.queryByName(name);
+    }
+
+    @Override
+    public List<Paper> queryAllPaperByuserID(long uid) {
+        return paperDao.queryAllPaperByuserID(uid);
+    }
+
+    @Override
     public int addPaper(Paper paper) {
         return paperDao.addPaper(paper);
     }
